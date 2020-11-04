@@ -8,7 +8,7 @@ public class BitShiftDemo {
 		System.out.println(i);
 		i = i >>> 1;
 
-		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE));
-		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE >>> 2));
+//		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE));
+//		System.out.println(Integer.toBinaryString(Integer.MIN_VALUE >>> 2));
 	}
 }

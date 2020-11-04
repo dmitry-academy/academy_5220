@@ -2,20 +2,27 @@ package by.academy.lesson4.loop;
 
 public class DoWhile {
 	public static void main(String[] args) {
-		int n = 10;
-		do {
-			System.out.println("Тик " + n--);
-		} while (n > 0);
 
-		int sum = 0;
-		int i = 0;
-		while (i < 20) {
-			if (i % 2 == 0) {
-				sum += i;
-			}
-			i++;
+		int m = 10;
+		int i = 10;
+
+		while (m > 10) {
+			System.out.println("Тест " + m--);
 		}
-		System.out.print("sum = " + sum);
+
+		do {
+			System.out.println("Sample : " + i--);
+		} while (i > 10);
+
+//		int sum = 0;
+//		int i = 0;
+//		while (i < 20) {
+//			if (i % 2 == 0) {
+//				sum += i;
+//			}
+//			i++;
+//		}
+//		System.out.print("sum = " + sum);
 
 	}
 }
