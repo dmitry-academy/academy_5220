@@ -8,10 +8,11 @@ public class RegexDemo3 {
 		System.out.println(test("google.com"));
 		System.out.println(test("reference1.ua"));
 		System.out.println(test("reference1.org"));
+		System.out.println(test("Hello world!"));
 	}
 
 	public static boolean test(String testString) {
-		Pattern pattern = Pattern.compile(".+\\.(com|ua|ru)");
+		Pattern pattern = Pattern.compile(".+\\.(com|ua|ru|org)");
 		Matcher matcher = pattern.matcher(testString);
 		return matcher.matches();
 	}

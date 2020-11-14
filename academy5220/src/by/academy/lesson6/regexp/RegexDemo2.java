@@ -6,7 +6,10 @@ import java.util.regex.Pattern;
 public class RegexDemo2 {
 	public static void main(String[] args) {
 		Pattern pattern = Pattern.compile("a*b");
-		Matcher matcher = pattern.matcher("aaab");
+
+		String text = "aacbsjkhjkhjkd";
+
+		Matcher matcher = pattern.matcher(text);
 		boolean b = matcher.matches();
 		System.out.println(b);
 	}

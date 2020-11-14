@@ -55,16 +55,9 @@ public class Person {
 		return getFullName() != null ? getFullName().equals(person.getFullName()) : person.getFullName() == null;
 	}
 
-	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Person [fullName=");
-		builder.append(fullName);
-		builder.append(", age=");
-		builder.append(age);
-		builder.append(", retired=");
-		builder.append(retired);
-		builder.append("]");
+		builder.append("Person alalalalal");
 		return builder.toString();
 	}
 
