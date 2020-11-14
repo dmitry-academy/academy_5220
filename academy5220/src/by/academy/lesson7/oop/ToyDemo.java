@@ -2,6 +2,7 @@ package by.academy.lesson7.oop;
 
 public class ToyDemo {
 	public static void main(String... args) {
-		Toy toy = new Toy("Кукла", 34, "Disney", 3);
+		String[] arr = { "Disney" };
+		Toy toy = new Toy("Кукла", 34, arr, 3);
 	}
 }
