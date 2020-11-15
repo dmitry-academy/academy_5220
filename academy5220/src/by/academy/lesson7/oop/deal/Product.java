@@ -50,4 +50,10 @@ public class Product {
 		this.quantity = quantity;
 	}
 
+	protected double calcDiscount() {
+		if (quantity* price > 1000) {
+			return 0.8;
+		}
+		return 1;
+	}
 }

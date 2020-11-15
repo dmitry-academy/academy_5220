@@ -6,7 +6,7 @@ public class AccessClass {
 	public static void main(String[] args) {
 		Parent parent = new Parent();
 		parent.publicAccessMethod();
-//        parent.defaultAccessMethod();
-//        parent.protectedAccessMethod();
+//		parent.defaultAccessMethod();
+//		parent.protectedAccessMethod();
 	}
 }
