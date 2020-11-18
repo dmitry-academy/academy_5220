@@ -1,6 +1,11 @@
 package by.academy.lesson7.oop.deal;
 
+import by.academy.lesson8.homework.AmericanPhoneValidator;
+import by.academy.lesson8.homework.Validator;
+
 public class Person {
+	
+	public static final Validator americanPhoneValidator = new AmericanPhoneValidator();
 	String name;
 	double cash;
 
