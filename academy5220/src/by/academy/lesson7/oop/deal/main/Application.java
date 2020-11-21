@@ -21,7 +21,8 @@ public class Application {
 //		products[3] = new Milk(3.00, "milk", "banana", 15, "black");
 
 		deal.printProducts();
-		deal.deleteProduct(1);
+		deal.deleteProduct(2);
+		System.out.println("---------------------------------------");
 		deal.printProducts();
 
 //		Person.americanPhoneValidator.isValid("+123123123");

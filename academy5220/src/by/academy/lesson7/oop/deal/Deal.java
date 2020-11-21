@@ -70,6 +70,7 @@ public class Deal implements DealInterface {
 	public void deleteProduct(int index) {
 
 		if (index > products.length || index < 0) {
+			System.out.println("Index of bound");
 			return;
 		}
 		if (productCounter != index) {
