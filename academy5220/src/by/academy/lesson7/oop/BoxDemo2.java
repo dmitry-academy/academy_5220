@@ -1,4 +1,5 @@
 package by.academy.lesson7.oop;
+
 public class BoxDemo2 {
     public static void main(String[] args) {
         Box myBox1 = new Box();

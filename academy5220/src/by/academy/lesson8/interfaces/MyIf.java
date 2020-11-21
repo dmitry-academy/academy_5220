@@ -1,9 +1,10 @@
 package by.academy.lesson8.interfaces;
 
 public interface MyIf {
-    int getNumber();
+	
+	int getNumber();
 
-    static int staticMethod() {
-        return 0;
-    }
+	static int staticMethod() {
+		return 0;
+	}
 }
