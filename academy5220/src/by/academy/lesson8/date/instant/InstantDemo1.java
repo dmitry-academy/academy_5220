@@ -15,7 +15,7 @@ public class InstantDemo1 {
 		// Устанавливаем милисекунды после (могут быть и до) эпохи
 		Instant fiftyMilliSecondsAfterEpoch = Instant.ofEpochMilli(50);
 
-		System.out.println("now: " + now);
+		System.out.println("now: " + now.getEpochSecond());
 		System.out.println("instant: " + instant);
 		System.out.println("fiveSecondsAfterEpoch: " + fiveSecondsAfterEpoch);
 		System.out.println("sixSecTwoNanBeforeEpoch: " + sixSecTwoNanBeforeEpoch);
