@@ -5,6 +5,9 @@ public class AverageDemo {
 
 		Integer[] intArray = { 1, 2, 3, 4, 5 };
 		Average<Integer> integerAverage = new Average<>(intArray);
+// 		Нельзя!
+//		String[] strArray = { "asd", "lalalala" };
+//		Average<String> strAverage = new Average<>(strArray);
 
 		System.out.println("Среднее значения для Integer " + integerAverage.average());
 

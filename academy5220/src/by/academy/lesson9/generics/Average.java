@@ -1,6 +1,6 @@
 package by.academy.lesson9.generics;
 
-public class Average<T extends Number> {
+public class Average<T extends Number & Comparable<T>> {
 	private T[] array;
 
 	public Average(T[] array) {
@@ -15,5 +15,9 @@ public class Average<T extends Number> {
 		}
 
 		return sum / array.length;
+	}
+
+	public boolean sameAvg(Average<?> dob) {
+		return average() == dob.average();
 	}
 }

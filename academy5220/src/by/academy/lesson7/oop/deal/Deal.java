@@ -103,6 +103,7 @@ public class Deal implements DealInterface {
 
 	}
 
+	@Override
 	public void printProducts() {
 		for (int i = 0; i < productCounter; i++) {
 			Product p = products[i];
