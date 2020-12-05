@@ -13,6 +13,7 @@ public class LinkedHashSetDemo {
 		linkedHashSet.add("Гaммa");
 		linkedHashSet.add("Эпсилон");
 		linkedHashSet.add("Oмeгa");
+		
 
 		System.out.println(linkedHashSet);
 	}

@@ -11,8 +11,9 @@ public class HashSetDemo {
 		hashSet.add("Брест");
 		hashSet.add("Могилев");
 		hashSet.add("Гродно");
-		hashSet.add("Гомель");
-		hashSet.add("Минск");
+
+		System.out.println(hashSet.add("Гомель"));
+		System.out.println(hashSet.add("Минск"));
 
 		System.out.println(hashSet);
 	}

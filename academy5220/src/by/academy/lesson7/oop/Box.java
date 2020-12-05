@@ -45,4 +45,17 @@ public class Box {
 		height = h;
 		depth = d;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Box [width=");
+		builder.append(width);
+		builder.append(", height=");
+		builder.append(height);
+		builder.append(", depth=");
+		builder.append(depth);
+		builder.append("]");
+		return builder.toString();
+	}
 }
