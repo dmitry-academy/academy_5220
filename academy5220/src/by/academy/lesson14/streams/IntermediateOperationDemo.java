@@ -21,7 +21,7 @@ public class IntermediateOperationDemo {
 			return i.toString();
 		}).collect(Collectors.joining(", ")));
 
-		System.out.println(Stream.of("test1", "test2", "test3").collect(Collectors.joining(", ")));
+		System.out.println(Stream.of("test1", "test2", "test3", "test4").collect(Collectors.joining(", ")));
 		System.out.println(Stream.of(1, 2, 3).map(i -> i.toString()).collect(Collectors.joining(", ")));
 		System.out.println();
 
@@ -59,7 +59,7 @@ public class IntermediateOperationDemo {
 		// collection.stream().map(String::toUpperCase).peek((e) -> System.out.print(","
 		// + e)).
 		System.out.println("Peek example: ");
-		mapList.stream().peek((qwqeqwe) -> System.out.print("(" + qwqeqwe + ")"));
+		mapList.stream().peek(i -> System.out.print("(" + i + ")")).collect(Collectors.toList());
 		System.out.println();
 
 		System.out.println("Limit 2: ");

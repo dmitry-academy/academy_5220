@@ -1,5 +1,6 @@
 package by.academy.lesson13.classwork;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -22,9 +23,10 @@ public class XFiles {
 		}
 		char[] arr = new char[1024];
 		StringBuilder str = new StringBuilder();
-		int j = 0;
-		try (FileReader fr = new FileReader(src)) {
-			while ((j = fr.read(arr)) > 0) {
+
+		try (BufferedReader fr = new BufferedReader(new FileReader(src))) {
+
+			while (fr.read(arr) > 0) {
 				str.append(arr);
 			}
 		}

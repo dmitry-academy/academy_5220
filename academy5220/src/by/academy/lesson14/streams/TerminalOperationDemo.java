@@ -77,7 +77,7 @@ public class TerminalOperationDemo {
 		// Возвращает максимальный элемент, в качестве условия использует компаратор
 		// collection.stream().max(String::compareTo).get()
 		System.out.println("max: ");
-		System.out.println(intList.stream().max(Comparator.comparing(Integer::valueOf)));
+		System.out.println(intList.stream().max(Comparator.comparing(i -> Integer.valueOf(i))));
 		System.out.println();
 
 		// forEach
@@ -105,6 +105,8 @@ public class TerminalOperationDemo {
 		// collection.stream().map(String::toUpperCase).toArray(String[]::new);
 		System.out.println("toArray: ");
 		System.out.println(Arrays.toString(intList.stream().map(t -> t * 10).toArray(Integer[]::new)));
+		System.out.println(Arrays.toString(intList.stream().map(t -> t * 10).toArray()));
+
 		System.out.println();
 
 		// reduce
