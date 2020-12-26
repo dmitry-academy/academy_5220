@@ -1,6 +1,7 @@
 package by.academy.lesson18;
 
 public class DeadlockRisk implements Runnable {
+
 	private static class Resource {
 	}
 
@@ -18,15 +19,16 @@ public class DeadlockRisk implements Runnable {
 	}
 
 	public void doCloud() {
-		synchronized (paper) { // May deadlock here
+		synchronized (scissors) { // May deadlock here
 			System.out.println(Thread.currentThread().getName() + " взяла бумагу для вырезания облачка");
-			synchronized (scissors) {
+			synchronized (paper) {
 				System.out.println(Thread.currentThread().getName() + " взяла ножницы для вырезания облачка");
 				System.out.println(Thread.currentThread().getName() + " вырезает облачко");
 			}
 		}
 	}
 
+	@Override
 	public void run() {
 		doSun();
 		doCloud();
@@ -34,8 +36,10 @@ public class DeadlockRisk implements Runnable {
 
 	public static void main(String[] args) {
 		DeadlockRisk job = new DeadlockRisk();
+
 		Thread masha = new Thread(job, "Маша");
 		Thread dasha = new Thread(job, "Даша");
+
 		masha.start();
 		dasha.start();
 	}

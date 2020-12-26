@@ -13,10 +13,7 @@ class Store {
 			}
 		}
 		product--;
-		System.out.println(Thread.currentThread().getName() + " ------------");
-		System.out.println(Thread.currentThread().getName() + " Consumer got 1 product");
-		System.out.println(Thread.currentThread().getName() + " Number of products: " + product);
-		System.out.println(Thread.currentThread().getName() + " ------------");
+		System.out.println(Thread.currentThread().getName() + "Consumer got 1 product. Number of products: " + product);
 		notify();
 	}
 
@@ -30,9 +27,8 @@ class Store {
 			}
 		}
 		product++;
-		System.out.println(Thread.currentThread().getName() + "------------");
-		System.out.println(Thread.currentThread().getName() + "Producer added 1 product");
-		System.out.println(Thread.currentThread().getName() + "Number of products: " + product);
+		System.out
+				.println(Thread.currentThread().getName() + "Producer added 1 product. Number of products: " + product);
 		notify();
 	}
 

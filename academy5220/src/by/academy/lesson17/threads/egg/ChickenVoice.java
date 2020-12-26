@@ -5,6 +5,7 @@ public class ChickenVoice {
 	public static void main(String... args) {
 
 		EggVoice eggThread = new EggVoice();
+		eggThread.setPriority(10);
 		System.out.println("Disput starting...");
 		eggThread.start();
 

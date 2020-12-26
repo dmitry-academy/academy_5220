@@ -2,6 +2,7 @@ package by.academy.lesson17;
 
 public class JoinDemo {
 	public static void main(String[] args) {
+
 		JoinRunnable a = new JoinRunnable("A");
 		JoinRunnable b = new JoinRunnable("B");
 		JoinRunnable c = new JoinRunnable("C");

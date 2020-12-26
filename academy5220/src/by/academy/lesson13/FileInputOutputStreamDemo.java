@@ -19,7 +19,7 @@ public class FileInputOutputStreamDemo {
 
 			InputStream input = new FileInputStream("a.txt");
 			int size = input.available();
-
+			
 			for (int i = 0; i < size; i++) {
 				// Чтение текстового файла посимвольно
 				System.out.print((char) input.read() + " ");
